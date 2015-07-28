@@ -18,7 +18,7 @@ dl, dd, ol, ul, figure {
 body {
   font-family: $base-font-family;
   font-size: $base-font-size;
-  line-height: $base-line-height;
+  line-height: 1em;
   font-weight: 300;
   color: $color-slate;
   -webkit-text-size-adjust: 100%;
@@ -31,12 +31,14 @@ p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
   margin-bottom: $spacing-unit / 2;
+  line-height: $base-line-height;
 }
 
 /** Images */
 
 img {
   max-width: 100%;
+  height: auto;
   vertical-align: middle;
 }
 
@@ -82,11 +84,11 @@ a {
 }
 
 h1 {
-  font-size: 2em;
+//  font-size: 2em;
 }
 
 h2 {
-  font-size: 2em;
+  //font-size: 2em;
   text-decoration: underline;
 }
 
@@ -101,8 +103,8 @@ h4 {
 
 blockquote {
   color: lighten($color-slate, 30%);
-  border-left: 2px solid lighten($color-slate, 50%);
-  padding-left: $spacing-unit / 2;
+  border-left: 2px solid $border-color;
+  padding-left: $spacing-unit-halved;
   letter-spacing: -1px;
   font-style: italic;
 

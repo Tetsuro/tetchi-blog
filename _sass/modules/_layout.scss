@@ -15,33 +15,3 @@ $wrapper-width: 800px;
   padding: 0 $spacing-unit;
   @extend %clearfix;
 }
-
-/*============================================================================
-  Header
- ==============================================================================*/
-
-.header {
-  padding: $spacing-unit;
-}
-
-.header__content {
-  display: flex;
-  align-items: center;
-}
-
-.header__logo {
-  width: 180px;
-}
-
-.header__nav {
-  margin-left: auto;
-}
-
-.header__links {
-  display: flex;
-  list-style-type: none;
-
-  a {
-    font-size: $mid-font-size;
-  }
-}

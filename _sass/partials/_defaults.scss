@@ -1,8 +1,8 @@
 $base-font-family: 'Droid Serif', sans-serif;
-$base-font-size:   18px;
-$mid-font-size:   22px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-font-size:   24px;
+//$mid-font-size:   22px;
+$small-font-size:  14px;
+$base-line-height: 1.8em;
 $spacing-unit:     40px;
 $spacing-unit-halved: $spacing-unit / 2;
-
+$spacing-unit-doubled: $spacing-unit * 2;

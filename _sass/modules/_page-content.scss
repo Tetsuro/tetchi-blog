@@ -1,10 +1,5 @@
-td {
-  code {
-    border: none;
-    background: none;
-  }
-}
-
-p {
-  line-height: 1.8;
+.post {
+  margin-bottom: $spacing-unit-doubled;
+  padding-bottom: $spacing-unit-doubled;
+  border-bottom: 1px solid $border-color;
 }

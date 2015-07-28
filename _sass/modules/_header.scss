@@ -1,0 +1,52 @@
+.header {
+  margin-bottom: $spacing-unit-doubled;
+  padding: 0 $spacing-unit;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  padding: $spacing-unit 0;
+  max-width: calc(#{$wrapper-width} - #{$spacing-unit-doubled}); // Required to remove padding on side for header.
+  border-bottom: 1px solid $border-color;
+
+}
+
+.header__logo {
+  width: 180px;
+  flex: 0 0 auto;
+}
+
+.header__nav {
+  margin-left: auto;
+}
+
+.header__links {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  border-bottom: 1px solid $border-color;
+  padding-bottom: $spacing-unit-halved;
+
+  a {
+    color: $color-black;
+
+    &.active {
+      color: $color-blue;
+    }
+  }
+
+  li {
+    margin-left: $spacing-unit;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.header__subtext {
+  text-align: right;
+  text-transform: uppercase;
+  font-size: $small-font-size;
+}

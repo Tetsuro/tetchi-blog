@@ -22,7 +22,7 @@
 			</div>
 		<?php endif; ?>
 		<div id="pagination" class="clearfix">
-			<?php posts_nav_link("/","&laquo; prev ","next &raquo;"); ?>
+			<?php posts_nav_link("/","&laquo; newer posts "," older posts &raquo;"); ?>
 		</div>
 		<?php get_footer(); ?>
 	</div>
