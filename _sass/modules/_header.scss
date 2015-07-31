@@ -9,7 +9,11 @@
   padding: $spacing-unit 0;
   max-width: calc(#{$wrapper-width} - #{$spacing-unit-doubled}); // Required to remove padding on side for header.
   border-bottom: 1px solid $border-color;
+  flex-direction: column;
 
+  @include phone-and-up {
+    flex-direction: row;
+  }
 }
 
 .header__logo {
@@ -18,7 +22,12 @@
 }
 
 .header__nav {
-  margin-left: auto;
+  flex-direction: column;
+
+  @include phone-and-up {
+    flex-direction: row;
+    margin-left: auto;
+  }
 }
 
 .header__links {
@@ -27,6 +36,7 @@
   list-style-type: none;
   border-bottom: 1px solid $border-color;
   padding-bottom: $spacing-unit-halved;
+  margin: 0;
 
   a {
     color: $color-black;
@@ -43,10 +53,21 @@
       margin-left: 0;
     }
   }
+
+  @include phone-and-up {
+    margin-left: $spacing-unit;
+  }
 }
 
 .header__subtext {
   text-align: right;
   text-transform: uppercase;
   font-size: $small-font-size;
+  display: none;
+
+  @include phone-and-up {
+    display: block;
+  }
+
+
 }
