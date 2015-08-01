@@ -5,6 +5,11 @@
   @include phone-and-up {
     padding: 0 $spacing-unit;
   }
+
+  @include tablet-and-up {
+    margin-bottom: $spacing-unit-doubled;
+  }
+
 }
 
 .header__content {
@@ -86,6 +91,7 @@
 .header__subtext {
   text-align: right;
   text-transform: uppercase;
+  font-size: $small-font-size;
   display: none;
 
   @include tablet-and-up {

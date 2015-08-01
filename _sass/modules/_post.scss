@@ -11,14 +11,17 @@
 
 .post__title {
   margin-bottom: 0;
+  text-align: center;
 }
 
 .post__metadata {
-  margin-bottom: $spacing-unit-halved;
+  margin-bottom: $spacing-unit;
+  font-size: $small-font-size;
+  text-align: center;
 
-
-    font-size: $small-font-size;
-
+  @include tablet-and-up {
+    margin-bottom: $spacing-unit-doubled;
+  }
 }
 
 .post__footer {

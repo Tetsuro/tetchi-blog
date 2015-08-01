@@ -9,7 +9,7 @@
           </h1>
           <div class="post__metadata">
             <p>
-              <?php the_date(); ?> under <?php the_category(', ') ?>  &bull; <?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?>
+              <?php the_date(); ?> under <?php the_category(', ') ?>
             </p>
           </div>
           <?php the_content('',FALSE,''); ?>

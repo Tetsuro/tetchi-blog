@@ -22,6 +22,10 @@ body {
   font-weight: 300;
   color: $color-slate;
   -webkit-text-size-adjust: 100%;
+
+  @include tablet-and-up {
+    font-size: $base-font-size-desktop;
+  }
 }
 
 /** Set `margin-bottom` to maintain vertical rhythm */
@@ -30,8 +34,12 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: $spacing-unit-halved;
   line-height: $base-line-height;
+
+  @include tablet-and-up {
+    margin-bottom: $spacing-unit;
+  }
 }
 
 /** Images */
@@ -72,20 +80,20 @@ h1, h2, h3, h4, h5, h6 {
 
 /** Links */
 a {
-    color: $color-blue-5;
-    text-decoration: none;
+  color: $color-blue-5;
+  text-decoration: none;
 
-    &:visited {
-      color: #609;
-    }
+  &:visited {
+    color: #609;
+  }
 
-    &:hover {
-        text-decoration: underline;
-    }
+  &:hover {
+      text-decoration: underline;
+  }
 }
 
 h1 {
-  line-height: 1.4em;
+  line-height: $h1-line-height;
 }
 
 h2 {
@@ -93,8 +101,13 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: $h3-font-size;
   text-decoration: underline;
+  margin-bottom: $spacing-unit-halved / 2;
+
+  @include tablet-and-up {
+    margin-bottom: $spacing-unit-halved;
+  }
 }
 
 h4 {
@@ -140,7 +153,7 @@ hr {
   height: 1px;
   border: 0;
   background-color: lighten($color-slate, 50%);
-  margin-bottom: $spacing-unit/2;
+  margin-bottom: $spacing-unit;
 }
 
 table {
