@@ -5,14 +5,12 @@
 	<div id="container">
 
 		<div id="main" role="main" class="clearfix">
-			<?php get_sidebar(); ?>
-
 
 			<div id="content" class="page">
 				<?php if(have_posts()) : ?>
 					<?php while(have_posts()) : the_post(); ?>
 
-						<div id="post-<?php the_ID(); ?>" class="post"> 
+						<div id="post-<?php the_ID(); ?>" class="post">
 
 							<h1><?php the_title(); ?></h1>
 							<?php the_content('',FALSE,''); ?>
@@ -22,7 +20,7 @@
 				<?php else : ?>
 					<div class="post">
 						<?php _e('Not Found'); ?>
-					</div> 
+					</div>
 					<?php endif; ?>
 
 			</div> <!-- end content -->

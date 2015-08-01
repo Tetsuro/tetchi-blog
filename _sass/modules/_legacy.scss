@@ -1,0 +1,10 @@
+/*============================================================================
+  Legacy CSS
+    * Shameful CSS to support old posts (smh)
+==============================================================================*/
+
+.sub {
+  font-size: $small-font-size;
+  text-align: center;
+  margin: -#{$spacing-unit / 4} 0 $spacing-unit-halved;
+}

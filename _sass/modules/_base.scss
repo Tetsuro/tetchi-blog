@@ -40,6 +40,7 @@ img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
+  border: 1px solid $border-color;
 }
 
 /** Figures */
@@ -85,16 +86,15 @@ a {
 
 h1 {
   line-height: 1.4em;
-//  font-size: 2em;
 }
 
 h2 {
-  //font-size: 2em;
   text-decoration: underline;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.2em;
+  text-decoration: underline;
 }
 
 h4 {
@@ -176,4 +176,8 @@ table {
     border: 1px solid #ddd;
     padding: 6px 13px;
   }
+}
+
+textarea {
+  width: 100%;
 }

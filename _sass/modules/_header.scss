@@ -26,6 +26,10 @@
   flex: 0 0 auto;
   margin-bottom: $spacing-unit-halved;
 
+  img {
+    border: none;
+  }
+
   @include tablet-and-up {
     margin-bottom: 0;
   }
