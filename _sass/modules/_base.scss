@@ -84,6 +84,7 @@ a {
 }
 
 h1 {
+  line-height: 1.4em;
 //  font-size: 2em;
 }
 
@@ -115,7 +116,7 @@ blockquote {
 
 pre, code {
   font-size: 15px;
-  border: 1px solid $color-blue-2;
+  border: 1px solid $border-color;
   border-radius: 3px;
   background-color: lighten($color-blue-1, 0.9);
 }

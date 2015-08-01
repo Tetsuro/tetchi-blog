@@ -1,5 +1,31 @@
 .post {
-  margin-bottom: $spacing-unit-doubled;
-  padding-bottom: $spacing-unit-doubled;
   border-bottom: 1px solid $border-color;
+  margin-bottom: $spacing-unit;
+  padding-bottom: $spacing-unit;
+
+  @include tablet-and-up {
+    margin-bottom: $spacing-unit-doubled;
+    padding-bottom: $spacing-unit-doubled;
+  }
+}
+
+.post__title {
+  margin-bottom: 0;
+}
+
+.post__metadata {
+  margin-bottom: $spacing-unit-halved;
+}
+
+.post__footer {
+  text-align: right;
+}
+
+.post__pagination {
+  text-align: center;
+  margin-bottom: $spacing-unit;
+
+  @include tablet-and-up {
+    margin-bottom: $spacing-unit-doubled;
+  }
 }

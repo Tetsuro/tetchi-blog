@@ -1,30 +1,40 @@
 .header {
-  margin-bottom: $spacing-unit-doubled;
-  padding: 0 $spacing-unit;
+  padding: 0 $spacing-unit-halved;
+  margin-bottom: $spacing-unit;
+
+  @include phone-and-up {
+    padding: 0 $spacing-unit;
+  }
 }
 
 .header__content {
   display: flex;
   align-items: center;
-  padding: $spacing-unit 0;
+  padding: $spacing-unit-halved 0;
   max-width: calc(#{$wrapper-width} - #{$spacing-unit-doubled}); // Required to remove padding on side for header.
   border-bottom: 1px solid $border-color;
   flex-direction: column;
 
-  @include phone-and-up {
+  @include tablet-and-up {
     flex-direction: row;
+    padding: $spacing-unit 0;
   }
 }
 
 .header__logo {
   width: 180px;
   flex: 0 0 auto;
+  margin-bottom: $spacing-unit-halved;
+
+  @include tablet-and-up {
+    margin-bottom: 0;
+  }
 }
 
 .header__nav {
   flex-direction: column;
 
-  @include phone-and-up {
+  @include tablet-and-up {
     flex-direction: row;
     margin-left: auto;
   }
@@ -34,7 +44,7 @@
   display: flex;
   justify-content: flex-end;
   list-style-type: none;
-  border-bottom: 1px solid $border-color;
+  line-height: 1;
   padding-bottom: $spacing-unit-halved;
   margin: 0;
 
@@ -47,25 +57,34 @@
   }
 
   li {
-    margin-left: $spacing-unit;
+    margin-left: $spacing-unit-halved;
 
     &:first-child {
       margin-left: 0;
     }
+
+    @include tablet-and-up {
+      margin-left: $spacing-unit;
+    }
   }
 
-  @include phone-and-up {
-    margin-left: $spacing-unit;
+  @include tablet-and-up {
+    margin: 0 0 $spacing-unit-halved $spacing-unit;
+    border-bottom: 1px solid $border-color;
+    font-size: $base-font-size;
   }
+
+  @include desktop {
+  }
+
 }
 
 .header__subtext {
   text-align: right;
   text-transform: uppercase;
-  font-size: $small-font-size;
   display: none;
 
-  @include phone-and-up {
+  @include tablet-and-up {
     display: block;
   }
 

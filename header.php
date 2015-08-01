@@ -29,7 +29,7 @@
     <nav class="header__nav">
       <ul class="header__links">
         <li><a href="/"<?php if (is_home()  || is_single() || is_search() || is_archive()){echo "class='active'"; } ?>>blawg</a></li>
-        <li><a href="/wordpress/about-me" <?php if (is_page('about-me')){echo "class='active'"; } ?>>about me</a></li>
+        <li><a href="/tetchi-wordpress/about-me" <?php if (is_page('about-me')){echo "class='active'"; } ?>>about</a></li>
         <li><a href="/" <?php if (is_page('about-me')){echo "class='active'"; } ?>>search</a></li>
         <li><a href="/" <?php if (is_page('about-me')){echo "class='active'"; } ?>>tags</a></li>
       </ul>
