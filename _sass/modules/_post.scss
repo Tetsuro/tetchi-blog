@@ -7,11 +7,24 @@
     margin-bottom: $spacing-unit-doubled;
     padding-bottom: $spacing-unit-doubled;
   }
+
+  hr {
+    max-width: 20%;
+    margin: 0 auto $spacing-unit;
+  }
 }
 
 .post__title {
   margin-bottom: 0;
   text-align: center;
+}
+
+.post__title--bottom-margin {
+  margin-bottom: $spacing-unit;
+
+  @include tablet-and-up {
+    margin-bottom: $spacing-unit-doubled;
+  }
 }
 
 .post__metadata {

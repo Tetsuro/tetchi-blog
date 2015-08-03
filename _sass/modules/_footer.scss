@@ -1,0 +1,17 @@
+.footer {
+  text-align: center;
+  padding-bottom: $spacing-unit;
+
+  @include tablet-and-up {
+    padding-bottom: $spacing-unit-doubled;
+  }
+}
+
+.footer__link {
+  display: inline-block;
+  padding: 0 $spacing-unit-halved / 2;
+
+  &, &:visited {
+    color: $color-black;
+  }
+}

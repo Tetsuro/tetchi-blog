@@ -17,6 +17,7 @@
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
  	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
 </head>
@@ -28,8 +29,8 @@
     </div>
     <nav class="header__nav">
       <ul class="header__links">
-        <li><a href="/"<?php if (is_home()  || is_single() || is_search() || is_archive()){echo "class='active'"; } ?>>blawg</a></li>
-        <li><a href="/tetchi-wordpress/about-me" <?php if (is_page('about-me')){echo "class='active'"; } ?>>about</a></li>
+        <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>" <?php if (is_home()  || is_single() || is_search() || is_archive()){echo "class='active'"; } ?>>blawg</a></li>
+        <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>about-me" <?php if (is_page('about-me')){echo "class='active'"; } ?>>about</a></li>
         <li><a href="/" <?php if (is_page('about-me')){echo "class='active'"; } ?>>search</a></li>
         <li><a href="/" <?php if (is_page('about-me')){echo "class='active'"; } ?>>tags</a></li>
       </ul>
