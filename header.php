@@ -34,7 +34,7 @@
         <li><a href="/" <?php if (is_page('about-me')){echo "class='active'"; } ?>>tags</a></li>
       </ul>
       <div class="header__subtext">
-        <span>tetchi's blog. bass // burgers // bahds.
+        <span>tetchi's blahg. bass // burgers // bahds.
       </div>
     </nav>
   </div>

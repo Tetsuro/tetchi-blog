@@ -15,9 +15,9 @@
           <?php the_content('',FALSE,''); ?>
           <?php link_pages('<p><strong>Pages:</strong> ', '</p>', 'number'); ?>
           <div class="addthis_sharing_toolbox"></div>
-          <div class="comments" name="comments">
-            <?php comments_template(); ?>
-          </div>
+        </div>
+        <div class="comments" name="comments">
+          <?php comments_template(); ?>
         </div>
       <?php endwhile; ?>
     <?php else : ?>

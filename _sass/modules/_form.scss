@@ -1,0 +1,32 @@
+textarea {
+  width: 100%;
+}
+
+.comments__list {
+  list-style-type: none;
+  margin: 0;
+}
+
+.comment__list-item {
+  display: flex;
+}
+
+.comment__gravatar {
+  @include phone-to-tablet {
+    display: none;
+  }
+
+  @include phone-and-up {
+    flex: 1 0 80px;
+    margin-right: $spacing-unit;
+  }
+}
+
+.comment__metadata {
+  margin-bottom: $spacing-unit-halved;
+  line-height: 1;
+}
+
+.comment__date {
+  font-size: $small-font-size;
+}

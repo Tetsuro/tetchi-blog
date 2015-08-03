@@ -82,10 +82,6 @@
     border-bottom: 1px solid $border-color;
     font-size: $base-font-size;
   }
-
-  @include desktop {
-  }
-
 }
 
 .header__subtext {
@@ -97,6 +93,4 @@
   @include tablet-and-up {
     display: block;
   }
-
-
 }
