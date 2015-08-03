@@ -3,13 +3,12 @@
   <div class="content__wrapper">
     <?php if(have_posts()) : ?>
       <?php while(have_posts()) : the_post(); ?>
-        <div id="post-<?php the_ID(); ?>" class="post">
+        <div class="post">
           <h1 class="post__title post__title--bottom-margin">
-            <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+            <?php the_title(); ?>
           </h1>
           <?php the_content('',FALSE,''); ?>
           <?php link_pages('<p><strong>Pages:</strong> ', '</p>', 'number'); ?>
-          <div class="addthis_sharing_toolbox"></div>
         </div>
       <?php endwhile; ?>
     <?php else : ?>

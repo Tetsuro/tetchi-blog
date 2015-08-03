@@ -33,12 +33,23 @@ body {
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
-%vertical-rhythm {
+{
   margin-bottom: $spacing-unit-halved;
   line-height: $base-line-height;
 
   @include tablet-and-up {
     margin-bottom: $spacing-unit;
+  }
+}
+
+%section-spacing {
+  border-bottom: 1px solid $border-color;
+  margin-bottom: $spacing-unit;
+  padding-bottom: $spacing-unit;
+
+  @include tablet-and-up {
+    margin-bottom: $spacing-unit-doubled;
+    padding-bottom: $spacing-unit-doubled;
   }
 }
 
@@ -94,6 +105,7 @@ a {
 
 h1 {
   line-height: $h1-line-height;
+  color: $color-black;
 }
 
 h2 {

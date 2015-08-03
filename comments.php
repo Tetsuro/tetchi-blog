@@ -52,30 +52,30 @@ if ($_COOKIE['wp-postpass_' . COOKIEHASH] != $post->post_password) {  // and it 
       <?php if ( $user_ID ) : ?>
         <p>Logged in as <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="Log out of this account">Logout &raquo;</a></p>
       <?php else : ?>
-        <p>
-          <label for="author"><small>Name <?php if ($req) echo "*"; ?></small></label>
-          <input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" size="40" tabindex="1" />
-        </p>
-        <p>
-          <label for="email"><small>Mail (will not be published) <?php if ($req) echo "*"; ?></small></label>
-          <input type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="40" tabindex="2" />
-       </p>
-        <p>
-          <label for="url"><small>Website</small></label>
-          <input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" size="40" tabindex="3" />
-        </p>
+        <div class="comment__input-wrapper">
+          <label for="author" class="comment__input-label">Name<?php if ($req) echo "*"; ?></label>
+          <input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" size="40" tabindex="1" class="comment__input-text" />
+        </div>
+        <div class="comment__input-wrapper">
+          <label for="email" class="comment__input-label">Mail (will not be published)<?php if ($req) echo "*"; ?></label>
+          <input type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="40" tabindex="2" class="comment__input-text" />
+       </div>
+        <div class="comment__input-wrapper">
+          <label for="url" class="comment__input-label">Website</label>
+          <input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" size="40" tabindex="3" class="comment__input-text" />
+        </div>
       <?php endif; ?>
-      <p>
-        <small>Comment</small>
-        <textarea name="comment" id="comment" rows="10" tabindex="4"></textarea>
-      </p>
-      <p>
+      <div class="comment__input-wrapper">
+        <label for="comment" class="comment__input-label">Comment</label>
+        <textarea name="comment" id="comment" rows="10" tabindex="4" class="comment__input-textarea"></textarea>
+      </div>
+      <div class="comment__input-wrapper">
          <?php if (function_exists('subscribe_reloaded_show')) subscribe_reloaded_show(); ?>
-      </p>
-      <p id="submit">
-        <input name="submit" type="submit" value="Post Comment!" />
+      </div>
+      <div class="comment__input-wrapper">
+        <input class="comment__input-button" name="submit" type="submit" value="Post comment!" />
         <input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>"  />
-      </p>
+      </div>
       <?php do_action('comment_form', $post->ID); ?>
     </form>
   <?php endif; // If registration required and not logged in ?>

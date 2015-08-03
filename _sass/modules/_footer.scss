@@ -14,4 +14,8 @@
   &, &:visited {
     color: $color-black;
   }
+
+  &:hover {
+    color: rgba($color-black, 0.5);
+  }
 }

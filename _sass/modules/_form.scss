@@ -3,13 +3,7 @@ textarea {
 }
 
 .comments {
-  margin-bottom: $spacing-unit;
-  padding-bottom: $spacing-unit;
-  border-bottom: 1px solid $border-color;
-
-  @include tablet-and-up {
-    margin-bottom: $spacing-unit;
-  }
+  @extend %section-spacing;
 }
 
 .comments__list {
@@ -39,4 +33,44 @@ textarea {
 
 .comment__date {
   font-size: $small-font-size;
+}
+
+.comment__input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment__input-label {
+  font-size: $small-font-size;
+  margin-bottom: $spacing-unit-halved / 2;
+}
+
+.comment__input-text, .comment__input-textarea {
+  border: 1px solid $border-color;
+  margin-bottom: $spacing-unit-halved;
+  padding: $spacing-unit-halved / 2;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+}
+
+.comment__input-button {
+  display: inline-block;
+  max-width: 100%;
+  background: $color-black;
+  color: $color-white;
+  padding: $spacing-unit-halved;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  border: none;
+  border-radius: $border-radius;
+
+  &:hover {
+    background: rgba($color-black, 0.5);
+    cursor: pointer;
+  }
+
+  @include tablet-and-up {
+    align-self: flex-end;
+    max-width: 250px;
+  }
 }
