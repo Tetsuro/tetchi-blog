@@ -75,8 +75,11 @@
 }
 
 .search-bar {
-  @extend %form-reset;
   text-align: center;
+}
+
+.search-bar label{
+  @extend .comment__input-label;
 }
 
 .search-bar input[type="submit"] {
@@ -85,5 +88,6 @@
 }
 
 .search-bar input[type="text"] {
+  @extend %form-reset;
   @extend .comment__input-text;
 }
