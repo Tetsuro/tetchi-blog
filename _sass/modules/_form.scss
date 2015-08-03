@@ -1,5 +1,6 @@
-textarea {
-  width: 100%;
+%form-reset {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
 }
 
 .comments {
@@ -49,18 +50,16 @@ textarea {
   border: 1px solid $border-color;
   margin-bottom: $spacing-unit-halved;
   padding: $spacing-unit-halved / 2;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
 }
 
 .comment__input-button {
+  @extend %form-reset;
+
   display: inline-block;
   max-width: 100%;
   background: $color-black;
   color: $color-white;
   padding: $spacing-unit-halved;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
   border: none;
   border-radius: $border-radius;
 
@@ -73,4 +72,18 @@ textarea {
     align-self: flex-end;
     max-width: 250px;
   }
+}
+
+.search-bar {
+  @extend %form-reset;
+  text-align: center;
+}
+
+.search-bar input[type="submit"] {
+  @extend .comment__input-button;
+  padding: $spacing-unit / 4;
+}
+
+.search-bar input[type="text"] {
+  @extend .comment__input-text;
 }

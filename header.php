@@ -44,7 +44,7 @@
       <ul class="header__links">
         <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>" <?php if (is_home()  || is_single() || is_search() || is_archive()){echo "class='active'"; } ?>>blawg</a></li>
         <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>about-me" <?php if (is_page('about-me')){echo "class='active'"; } ?>>about</a></li>
-        <li><a href="/" <?php if (is_page('about-me')){echo "class='active'"; } ?>>search</a></li>
+        <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>search" <?php if (is_page('search')){echo "class='active'"; } ?>>search</a></li>
         <li><a href="/" <?php if (is_page('about-me')){echo "class='active'"; } ?>>tags</a></li>
       </ul>
       <div class="header__subtext">
