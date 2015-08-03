@@ -6,9 +6,17 @@
 .sub {
   font-size: $small-font-size;
   text-align: center;
-  margin: -#{$spacing-unit / 4} 0 $spacing-unit-halved;
+  margin: 0 $spacing-unit-halved;
 }
 
 .wp-smiley {
   border: none;
+}
+
+.embed-container {
+  margin-bottom: $spacing-unit;
+
+  & + .sub {
+    margin-top: -$spacing-unit;
+  }
 }
