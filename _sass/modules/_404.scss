@@ -1,0 +1,44 @@
+.burger-belt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url('img/404.gif');
+  background-position: 0 0;
+  background-size: 350px 175px;
+  background-repeat: repeat;
+  background-color: #000;
+  height: 100vh;
+  width: 100%;
+  animation: belt 15s infinite linear;
+
+
+  h1 {
+    font-size: 8em;
+    text-align: center;
+    color: #fff;
+    line-height: 1em;
+  }
+
+  p {
+    color: #fff;
+  }
+
+  a {
+    text-decoration: underline;
+
+    &, &:visited {
+     color: #fff;
+    }
+  }
+}
+
+@keyframes belt {
+  0% {
+    background-position: 0px;
+  }
+
+  100% {
+    background-position: 350px;
+  }
+}

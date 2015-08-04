@@ -70,9 +70,6 @@ if ($_COOKIE['wp-postpass_' . COOKIEHASH] != $post->post_password) {  // and it 
         <textarea name="comment" id="comment" rows="10" tabindex="4" class="comment__input-textarea"></textarea>
       </div>
       <div class="comment__input-wrapper">
-         <?php if (function_exists('subscribe_reloaded_show')) subscribe_reloaded_show(); ?>
-      </div>
-      <div class="comment__input-wrapper">
         <input class="comment__input-button" name="submit" type="submit" value="Post comment!" />
         <input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>"  />
       </div>
