@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /** Links */
 a {
-  color: $color-blue-5;
+  color: $color-blue-2;
   text-decoration: none;
 
   &:visited {
@@ -144,6 +144,7 @@ pre, code {
   border: 1px solid $border-color;
   border-radius: 3px;
   background-color: lighten($color-blue-1, 0.9);
+  word-wrap: break-word;
 }
 
 code {
