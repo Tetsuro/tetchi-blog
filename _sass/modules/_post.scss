@@ -33,6 +33,10 @@
   @include tablet-and-up {
     margin-bottom: $spacing-unit-doubled;
   }
+
+  > p {
+    margin: 0;
+  }
 }
 
 .post__footer {

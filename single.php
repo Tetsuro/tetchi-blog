@@ -14,7 +14,6 @@
           </div>
           <?php the_content('',FALSE,''); ?>
           <?php link_pages('<p><strong>Pages:</strong> ', '</p>', 'number'); ?>
-          <div class="addthis_sharing_toolbox"></div>
         </div>
         <div class="comments" name="comments">
           <?php comments_template(); ?>
@@ -25,6 +24,7 @@
         <?php _e('Not Found'); ?>
       </div>
     <?php endif; ?>
+    <div class="addthis_sharing_toolbox"></div>
     <?php get_footer(); ?>
   </div>
 </body>

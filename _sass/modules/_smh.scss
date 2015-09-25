@@ -6,7 +6,7 @@
 .sub {
   font-size: $small-font-size;
   text-align: center;
-  margin: 0 $spacing-unit-halved;
+  margin: -$spacing-unit 0 $spacing-unit;
 }
 
 .wp-smiley {
@@ -15,8 +15,8 @@
 
 .embed-container {
   margin-bottom: $spacing-unit;
+}
 
-  & + .sub {
-    margin-top: -$spacing-unit;
-  }
+.addthis_sharing_toolbox {
+  text-align: center;
 }
