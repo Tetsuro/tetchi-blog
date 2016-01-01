@@ -6,7 +6,11 @@
 .sub {
   font-size: $small-font-size;
   text-align: center;
-  margin: -$spacing-unit 0 $spacing-unit;
+  margin: -$spacing-unit-halved 0 $spacing-unit;
+
+  @include tablet-and-up {
+    margin: -$spacing-unit 0 $spacing-unit;
+  }
 }
 
 .wp-smiley {

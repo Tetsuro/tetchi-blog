@@ -22,7 +22,7 @@
   }
 
   @include phone-and-up {
-    flex: 1 0 80px;
+    flex: 0 1 80px;
     margin-right: $spacing-unit;
   }
 }

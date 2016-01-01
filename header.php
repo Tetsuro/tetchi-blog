@@ -13,7 +13,7 @@
         <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>tags" <?php if (is_page('tags')){echo "class='active'"; } ?>>tags</a></li>
       </ul>
       <div class="header__subtext">
-        <span>tetchi's blahg. bass // burgers // bahds.</span>
+        <span>tetchi's blog. bass // burgers // bahds.</span>
       </div>
     </nav>
   </div>
