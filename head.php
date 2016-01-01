@@ -4,22 +4,19 @@
 
   <title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
   <?php if (  (is_home()) || (is_front_page())  ) { ?>
-  <meta name="description" content="Tetchi's Blog on Web Design, Graphic Design, Shopify, and Art."/>
+  <meta name="description" content="Tetchi's Blog about Front-end Development, Graphic Design, Art, and Life."/>
   <?php } elseif (is_single()) { ?>
   <meta name="description" content="<?php echo strip_tags(get_the_excerpt());?>"/>
   <?php } ?>
   <meta name="author" content="Tetsuro Takara">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
 
-
   <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
 
   <!-- GA Stuff -->
   <script type="text/javascript">

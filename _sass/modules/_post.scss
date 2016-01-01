@@ -10,11 +10,20 @@
   &:last-child {
     margin: 0;
   }
+
+  a {
+    text-decoration: underline;
+  }
+
 }
 
 .post__title {
   margin-bottom: 0;
   text-align: center;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .post__title--bottom-margin {
