@@ -14,7 +14,8 @@
         <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>tags" <?php if (is_page('tags')){echo "class='active'"; } ?>>tags</a></li>
       </ul>
       <div class="header__subtext">
-        <span>tetchi's blog. bass // burgers // bahds.</span>
+        <span aria-hidden="true">TETCHI'S BLOG. BASS // BURGERS // BAHDS.</span>
+        <span class="visually-hidden">tetchi's blog. Bass, burgers, and buds.</span>
       </div>
     </nav>
   </div>
