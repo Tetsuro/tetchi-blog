@@ -14,7 +14,7 @@
 					</div>
 					<?php the_content('',FALSE,''); ?>
 					<div class="post__footer">
-						<a href="<?php the_permalink() ?>#more-<?php the_id() ?>">Read more  &rarr;</a>
+						<a href="<?php the_permalink() ?>#more-<?php the_id() ?>">Read more <span class="visually-hidden">about <?php the_title(); ?></span><span aria-hidden="true">&rarr;</span></a>
 					</div>
 				</div>
 			<?php endwhile; ?>
