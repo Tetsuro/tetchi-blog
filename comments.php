@@ -54,20 +54,20 @@ if ($_COOKIE['wp-postpass_' . COOKIEHASH] != $post->post_password) {  // and it 
       <?php else : ?>
         <div class="comment__input-wrapper">
           <label for="author" class="comment__input-label">Name<?php if ($req) echo "*"; ?></label>
-          <input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" size="40" tabindex="1" class="comment__input-text" />
+          <input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" size="40" class="comment__input-text" />
         </div>
         <div class="comment__input-wrapper">
           <label for="email" class="comment__input-label">Mail (will not be published)<?php if ($req) echo "*"; ?></label>
-          <input type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="40" tabindex="2" class="comment__input-text" />
+          <input type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="40" class="comment__input-text" />
        </div>
         <div class="comment__input-wrapper">
           <label for="url" class="comment__input-label">Website</label>
-          <input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" size="40" tabindex="3" class="comment__input-text" />
+          <input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" size="40" class="comment__input-text" />
         </div>
       <?php endif; ?>
       <div class="comment__input-wrapper">
         <label for="comment" class="comment__input-label">Comment</label>
-        <textarea name="comment" id="comment" rows="10" tabindex="4" class="comment__input-textarea"></textarea>
+        <textarea name="comment" id="comment" rows="10" class="comment__input-textarea"></textarea>
       </div>
       <div class="comment__input-wrapper">
         <input class="comment__input-button" name="submit" type="submit" value="Post comment!" />

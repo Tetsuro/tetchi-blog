@@ -99,7 +99,7 @@
   top: -50px;
   left: 0;
 
-  &:focus {
+  &:focus, &:active {
     padding: $spacing-unit-halved;
     background: $color-black;
     color: $color-white;
