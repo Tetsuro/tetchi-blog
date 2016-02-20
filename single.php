@@ -4,9 +4,9 @@
     <?php if(have_posts()) : ?>
       <?php while(have_posts()) : the_post(); ?>
         <div id="post-<?php the_ID(); ?>" class="post">
-          <h1 class="post__title">
+          <h2 class="post__title">
             <?php the_title(); ?>
-          </h1>
+          </h2>
           <div class="post__metadata">
             <p>
               <?php the_date(); ?> under <?php the_category(', ') ?>

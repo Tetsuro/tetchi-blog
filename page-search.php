@@ -10,9 +10,9 @@ Template Name: Search Page
     <?php if(have_posts()) : ?>
       <?php while(have_posts()) : the_post(); ?>
         <div class="post">
-          <h1 class="post__title post__title--bottom-margin">
+          <h2 class="post__title post__title--bottom-margin">
             <?php the_title(); ?>
-          </h1>
+          </h2>
           <div class="search-bar">
             <?php get_search_form(); ?>
           </div>

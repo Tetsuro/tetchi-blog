@@ -20,8 +20,11 @@
 .post__title {
   margin-bottom: 0;
   text-align: center;
+  font-size: 2em;
+  line-height: $h1-line-height;
+  color: $color-black;
 
-  a {
+  &, a {
     text-decoration: none;
   }
 }
