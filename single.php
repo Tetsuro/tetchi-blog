@@ -3,7 +3,7 @@
   <div class="content__wrapper">
     <?php if(have_posts()) : ?>
       <?php while(have_posts()) : the_post(); ?>
-        <div id="post-<?php the_ID(); ?>" class="post">
+        <article id="post-<?php the_ID(); ?>" class="post" role="article">
           <h2 class="post__title">
             <?php the_title(); ?>
           </h2>
@@ -15,15 +15,15 @@
           <?php the_content('',FALSE,''); ?>
           <?php link_pages('<p><strong>Pages:</strong> ', '</p>', 'number'); ?>
           <div class="addthis_sharing_toolbox"></div>
-        </div>
+        </article>
         <div class="comments" name="comments">
           <?php comments_template(); ?>
         </div>
       <?php endwhile; ?>
     <?php else : ?>
-      <div class="post">
+      <article class="post" role="article">
         <?php _e('Not Found'); ?>
-      </div>
+      </article>
     <?php endif; ?>
     <?php get_footer(); ?>
   </div>

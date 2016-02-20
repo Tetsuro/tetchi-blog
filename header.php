@@ -2,8 +2,8 @@
 <?php get_template_part('head'); ?>
 <header class="header">
   <div class="header__content content__wrapper">
-    <h1 class="visually-hidden">tetchi's blawg</h1>
-    <div class="header__logo">
+    <h1 class="visually-hidden"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">tetchi's blawg</a></h1>
+    <div class="header__logo" aria-hidden="true">
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo"><img src="<?php bloginfo('template_directory'); ?>/img/tetchi.gif"/ alt="Tetchi Burger"></a>
     </div>
     <nav class="header__nav">
