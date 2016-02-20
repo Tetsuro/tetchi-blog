@@ -1,5 +1,3 @@
-<!doctype html>
-<?php get_template_part('head'); ?>
 <header class="header">
   <div class="header__content content__wrapper">
     <h1 class="visually-hidden"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">tetchi's blawg</a></h1>

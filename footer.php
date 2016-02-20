@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer" role="footer">
   <a class="footer__link" target="_blank" href="http://instagram.com/tetchi">
     <i class="fa fa-instagram fa-2x" aria-role="hidden"></i>
     <span class="visually-hidden">Instagram</span>

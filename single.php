@@ -1,6 +1,7 @@
-<?php get_header(); ?>
+<?php get_template_part('head'); ?>
 <body>
-  <div class="content__wrapper">
+  <?php get_header(); ?>
+  <div class="content__wrapper" role="main">
     <?php if(have_posts()) : ?>
       <?php while(have_posts()) : the_post(); ?>
         <article id="post-<?php the_ID(); ?>" class="post" role="article">
