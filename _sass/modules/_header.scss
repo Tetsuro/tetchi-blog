@@ -93,3 +93,16 @@
     display: block;
   }
 }
+
+.skip-to-content {
+  position: absolute;
+  top: -50px;
+  left: 0;
+
+  &:focus {
+    padding: $spacing-unit-halved;
+    background: $color-black;
+    color: $color-white;
+    top: 0px;
+  }
+}

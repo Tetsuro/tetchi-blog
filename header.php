@@ -1,4 +1,5 @@
 <header class="header">
+  <a href="#main-content" class="skip-to-content">Skip to content</a>
   <div class="header__content content__wrapper">
     <h1 class="visually-hidden"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">tetchi's blawg</a></h1>
     <div class="header__logo" aria-hidden="true">

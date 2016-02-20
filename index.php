@@ -1,7 +1,7 @@
 <?php get_template_part('head'); ?>
 <body>
 	<?php get_header(); ?>
-	<div class="content__wrapper" role="main">
+	<div class="content__wrapper" role="main" id="main-content">
 		<?php if(have_posts()) : ?>
 			<?php while(have_posts()) : the_post(); ?>
 				<article id="post-<?php the_ID(); ?>" class="post" role="article">
@@ -10,7 +10,7 @@
 					</h2>
 					<div class="post__metadata">
 						<p>
-							<?php the_date(); ?> under <?php the_category(', ') ?>
+							<?php the_date(); ?> under <?php the_category("<span aria-hidden='true'>, </span>") ?>
 						</p>
 					</div>
 					<?php the_content('',FALSE,''); ?>

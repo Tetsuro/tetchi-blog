@@ -10,7 +10,7 @@
           </h2>
           <div class="post__metadata">
             <p>
-              <?php the_date(); ?> under <?php the_category(', ') ?>
+              <?php the_date(); ?> under <?php the_category("<span aria-hidden='true'>, </span>") ?>
             </p>
           </div>
           <?php the_content('',FALSE,''); ?>
