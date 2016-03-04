@@ -10,7 +10,7 @@
 					</h2>
 					<div class="post__metadata">
 						<p>
-							<?php the_date(); ?> under <?php the_category("<span aria-hidden='true'>, </span>") ?>
+							<?php the_time('F j, Y'); ?> under <?php the_category("<span aria-hidden='true'>, </span>") ?>
 						</p>
 					</div>
 					<?php the_content('',FALSE,''); ?>
@@ -25,7 +25,7 @@
 			</article>
 		<?php endif; ?>
 		<div class="post__pagination">
-			<?php posts_nav_link("/","&laquo; newer "," older &raquo;"); ?>
+			<?php posts_nav_link("<span aria-hidden='true'>/</span>","&laquo; newer "," older &raquo;"); ?>
 		</div>
 		<?php get_footer(); ?>
 	</div>

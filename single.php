@@ -1,7 +1,7 @@
 <?php get_template_part('head'); ?>
 <body>
   <?php get_header(); ?>
-  <div class="content__wrapper" role="main" id="main-content" tabindex="-1">
+  <div class="content__wrapper" role="main" id="main-content">
     <?php if(have_posts()) : ?>
       <?php while(have_posts()) : the_post(); ?>
         <article id="post-<?php the_ID(); ?>" class="post" role="article">

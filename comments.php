@@ -12,7 +12,7 @@ if ($_COOKIE['wp-postpass_' . COOKIEHASH] != $post->post_password) {  // and it 
 ?>
 
 <?php if ($comments) : ?>
-  <h2><?php comments_number('No Responses', 'One Response', '% Responses' );?> to &#8220;<?php the_title(); ?>&#8221;</h2>
+  <h2><?php comments_number('No comments', 'One lonlely little comment', '% comments' );?></h2>
   <ul class="comments__list">
   <?php
     foreach ($comments as $comment) : ?>

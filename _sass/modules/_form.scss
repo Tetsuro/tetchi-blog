@@ -14,6 +14,11 @@
 
 .comment__list-item {
   display: flex;
+  margin-bottom: $spacing-unit;
+}
+
+.comment__author {
+  font-weight: bold;
 }
 
 .comment__gravatar {
@@ -22,8 +27,8 @@
   }
 
   @include phone-and-up {
-    flex: 0 1 80px;
-    margin-right: $spacing-unit;
+    flex: 0 0 80px;
+    margin-right: $spacing-unit-halved;
   }
 }
 
@@ -50,6 +55,7 @@
   border: 1px solid $border-color;
   margin-bottom: $spacing-unit-halved;
   padding: $spacing-unit-halved / 2;
+  font-size: 1em;
 }
 
 .comment__input-button {
