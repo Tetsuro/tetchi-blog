@@ -2,7 +2,7 @@
   <a href="#main-content" class="skip-to-content">Skip to main content</a>
   <div class="header__content content__wrapper">
     <h1 class="visually-hidden"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">tetchi's blawg</a></h1>
-    <div class="header__logo" aria-hidden="true">
+    <div class="header__logo" aria-hidden="true" tabindex="-1">
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo"><img src="<?php bloginfo('template_directory'); ?>/img/tetchi.gif"/ alt="Tetchi Burger"></a>
     </div>
     <nav class="header__nav">

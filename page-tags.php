@@ -7,7 +7,7 @@ Template Name: Tags Page
 <?php get_template_part('head'); ?>
 <body>
   <?php get_header(); ?>
-  <div class="content__wrapper" role="main" id="main-content">
+  <main class="content__wrapper" role="main" id="main-content" tabindex="0">
     <?php if(have_posts()) : ?>
       <?php while(have_posts()) : the_post(); ?>
         <article class="post" role="article">
@@ -26,6 +26,6 @@ Template Name: Tags Page
       </article>
     <?php endif; ?>
     <?php get_footer(); ?>
-  </div>
+  </main>
 </body>
 </html>

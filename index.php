@@ -1,7 +1,7 @@
 <?php get_template_part('head'); ?>
 <body>
 	<?php get_header(); ?>
-	<div class="content__wrapper" role="main" id="main-content">
+	<main class="content__wrapper" role="main" id="main-content" tabindex="0">
 		<?php if(have_posts()) : ?>
 			<?php while(have_posts()) : the_post(); ?>
 				<article id="post-<?php the_ID(); ?>" class="post" role="article">
@@ -28,6 +28,6 @@
 			<?php posts_nav_link("<span aria-hidden='true'>/</span>","&laquo; newer "," older &raquo;"); ?>
 		</div>
 		<?php get_footer(); ?>
-	</div>
+	</main>
 </body>
 </html>
