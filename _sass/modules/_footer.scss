@@ -10,12 +10,6 @@
 .footer__link {
   display: inline-block;
   padding: 0 $spacing-unit-halved / 2;
-
-  &, &:visited {
-    color: $color-black;
-  }
-
-  &:hover {
-    color: rgba($color-black, 0.5);
-  }
+  color: $color-black;
+  font-size: 0.8em;
 }

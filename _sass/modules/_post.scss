@@ -11,10 +11,9 @@
     margin: 0;
   }
 
-  a {
+  a:hover, a:focus {
     text-decoration: underline;
   }
-
 }
 
 .post__title {

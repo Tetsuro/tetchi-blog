@@ -9,7 +9,6 @@
   @include tablet-and-up {
     margin-bottom: $spacing-unit-doubled;
   }
-
 }
 
 .header__content {
@@ -62,6 +61,10 @@
 
     &.active {
       color: $color-blue;
+    }
+
+    &:hover, &:focus {
+      text-decoration: underline;
     }
   }
 
