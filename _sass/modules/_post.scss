@@ -11,8 +11,20 @@
     margin: 0;
   }
 
-  a:hover, a:focus {
+  a {
     text-decoration: underline;
+  }
+
+  a:hover, a:focus {
+    color: $color-blue-3;
+    text-decoration: underline;
+  }
+
+  figcaption {
+    font-size: $small-font-size;
+    text-align: center;
+    margin-bottom: $spacing-unit;
+    line-height: 1.4rem;
   }
 }
 
@@ -57,5 +69,19 @@
 .post__pagination {
   text-align: center;
   @extend %section-spacing;
+}
 
+.emoji {
+  border: 0;
+  width: 24px;
+  height: 24px;
+  vertical-align: text-top;
+}
+
+.aligncenter {
+  text-align: center;
+}
+
+figure > img {
+  display: inline-block;
 }
