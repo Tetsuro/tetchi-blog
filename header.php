@@ -10,7 +10,7 @@
         <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>" <?php if (is_home()  || is_single() || is_search() || is_archive()){echo "class='active'"; } ?>>blawg</a></li>
         <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>about-me" <?php if (is_page('about-me')){echo "class='active'"; } ?>>about</a></li>        
         <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>tags" <?php if (is_page('tags')){echo "class='active'"; } ?>>tags</a></li>
-        <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>works" <?php if (is_page('works')){echo "class='active'"; } ?>>search</a></li>
+        <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>works" <?php if (is_page('works')){echo "class='active'"; } ?>>works</a></li>
       </ul>
       <div class="header__subtext">
         <span aria-hidden="true">TETCHI'S BLOG. BASS // BURGERS // BAHDS.</span>
