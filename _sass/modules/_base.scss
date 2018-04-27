@@ -128,10 +128,9 @@ h4 {
 }
 
 blockquote {
-  color: lighten($color-slate, 30%);
-  border-left: 2px solid $border-color;
-  padding-left: $spacing-unit-halved;
-  letter-spacing: -1px;
+  color: lighten($color-slate, 15%);
+  border-left: 10px solid $border-color;
+  padding-left: $spacing-unit;
   font-style: italic;
 
   > :last-child {
