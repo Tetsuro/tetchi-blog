@@ -13,6 +13,11 @@
               <?php the_time('F j, Y'); ?> under <?php the_category("<span aria-hidden='true'>, </span>") ?>
             </p>
           </div>
+          <?php if (has_post_thumbnail()) : ?>
+            <div class="post__thumbnail">
+	            <?php the_post_thumbnail(); ?>
+            </div>
+          <?php endif ?>
           <?php the_content('',FALSE,''); ?>
           <?php link_pages('<p><strong>Pages:</strong> ', '</p>', 'number'); ?>
           <div class="addthis_sharing_toolbox"></div>

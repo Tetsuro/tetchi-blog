@@ -62,6 +62,14 @@
   }
 }
 
+.post__thumbnail {
+  margin-bottom: $spacing-unit;
+
+  @include tablet-and-up {
+    margin-bottom: $spacing-unit-doubled;
+  }
+}
+
 .post__footer {
   text-align: right;
 }
