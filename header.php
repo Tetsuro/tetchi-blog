@@ -13,8 +13,7 @@
         <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>works" <?php if (is_page('works')){echo "class='active'"; } ?>>works</a></li>
       </ul>
       <div class="header__subtext">
-        <span aria-hidden="true">TETCHI'S BLOG. BASS // BURGERS // BAHDS.</span>
-        <span class="visually-hidden">tetchi's blog. Bass, burgers, and buds.</span>
+        <span>TETCHI'S BLOG ABOUT LIFE AND STUFF</span>
       </div>
     </nav>
   </div>

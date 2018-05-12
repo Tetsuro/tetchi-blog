@@ -86,3 +86,10 @@ figure > img {
   display: inline-block;
   margin-bottom: $spacing-unit / 4;
 }
+
+.alignwide {
+  margin-left: calc(25% - 25vw);
+  margin-right: calc(25% - 25vw);
+  width: auto;
+  max-width: 1000%;
+}
