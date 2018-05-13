@@ -38,6 +38,8 @@
 
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+
 
     <!-- GA Stuff -->
     <script type="text/javascript">
