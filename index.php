@@ -13,6 +13,11 @@
 							<?php the_time('F j, Y'); ?> under <?php the_category("<span aria-hidden='true'>, </span>") ?>
 						</p>
 					</div>
+					<?php if (has_post_thumbnail()) : ?>
+            <div class="post__thumbnail">
+	            <?php the_post_thumbnail(); ?>
+            </div>
+          <?php endif ?>
 					<?php the_content('',FALSE,''); ?>
 					<div class="post__footer">
 						<a href="<?php the_permalink() ?>#more-<?php the_id() ?>">Read more <span class="visually-hidden">about <?php the_title(); ?></span><span aria-hidden="true">&rarr;</span></a>
