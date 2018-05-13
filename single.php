@@ -18,6 +18,11 @@
 	            <?php the_post_thumbnail(); ?>
             </div>
           <?php endif ?>
+          <?php if (has_excerpt()) : ?>
+            <div class="post__excerpt">
+	            <?php the_excerpt(); ?>
+            </div>
+          <?php endif ?>
           <?php the_content('',FALSE,''); ?>
           <?php link_pages('<p><strong>Pages:</strong> ', '</p>', 'number'); ?>
           <div class="addthis_sharing_toolbox"></div>

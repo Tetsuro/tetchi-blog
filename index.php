@@ -18,6 +18,11 @@
 	            <?php the_post_thumbnail(); ?>
             </div>
           <?php endif ?>
+					<?php if (has_excerpt()) : ?>
+            <div class="post__excerpt">
+	            <?php the_excerpt(); ?>
+            </div>
+          <?php endif ?>
 					<?php the_content('',FALSE,''); ?>
 					<div class="post__footer">
 						<a href="<?php the_permalink() ?>#more-<?php the_id() ?>">Read more <span class="visually-hidden">about <?php the_title(); ?></span><span aria-hidden="true">&rarr;</span></a>

@@ -64,10 +64,10 @@
 
 .post__thumbnail {
   margin-bottom: $spacing-unit;
+}
 
-  @include tablet-and-up {
-    margin-bottom: $spacing-unit-doubled;
-  }
+.post__excerpt {
+  margin-bottom: $spacing-unit;
 }
 
 .post__footer {

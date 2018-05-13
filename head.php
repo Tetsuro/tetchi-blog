@@ -1,32 +1,35 @@
 <!doctype html>
   <head>
+    <title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="Tetsuro Takara">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
+    <meta property="og:type" content="blog"/>
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@t3tchi" />
+    <meta name="twitter:creator" content="@t3tchi" />
 
-    <title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
     <?php if (  (is_home()) || (is_front_page())  ) { ?>
       <meta name="description" content="Tetchi's blog about life and stuff."/>
       <meta property="og:description" content="Tetchi's blog about life and stuff."/>
+      <meta property="og:title" content="Tetchi blog" />
+      <meta property="og:image" content="<?php echo bloginfo('template_directory'); ?>/img/tetchi.gif"/>
     <?php } elseif (is_single()) { ?>
       <meta name="description" content="<?php echo strip_tags(get_the_excerpt());?>"/>
       <meta property="og:description" content="<?php echo get_the_excerpt(); ?>"/>
+      <meta property="og:title" content="<?php echo get_the_title(); ?>" />
+      <meta property="og:url" content="<?php echo get_permalink(); ?>" />
+      <meta name="twitter:description" content="<?php echo get_the_excerpt(); ?>">
+      <?php if (has_post_thumbnail()) : ?>
+        <?php 
+          $thumbnailSrc = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium');
+          $image = esc_attr($thumbnailSrc[0]);
+        ?>
+        <meta property="og:image" content="<?php echo $image; ?>"/>
+      <?php endif ?>
     <?php } ?>
-    <meta name="author" content="Tetsuro Takara">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
-
-    <!--Social metadata-->
-    <meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
-    <meta property="og:title" content="<?php echo get_the_title(); ?>" />
-    <meta property="og:url" content="<?php echo get_permalink(); ?>" />
-    <meta property="og:type" content="blog"/>
-
-    <?php if (has_post_thumbnail()) : ?>
-      <?php 
-        $thumbnailSrc = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium');
-        $image = esc_attr($thumbnailSrc[0]);
-      ?>
-      <meta property="og:image" content="<?php echo $image; ?>"/>
-    <?php endif ?>
 
     <!--Favicons-->
     <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_directory'); ?>/apple-touch-icon.png">
