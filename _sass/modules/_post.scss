@@ -102,3 +102,33 @@ figure > img {
   max-width: 1000%;
   text-align: center;
 }
+
+.alignleft {
+  text-align: center;
+
+  @include tablet-and-up {
+    float: left;
+    margin-right: $spacing-unit;
+    margin-bottom: 0;
+
+    > img,
+    figcaption {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.alignright {
+  text-align: center;
+  
+  @include tablet-and-up {
+    float: right;
+    margin-left: $spacing-unit;
+    margin-bottom: 0;
+
+    > img,
+    figcaption {
+      margin-bottom: 0;
+    }
+  }
+}
