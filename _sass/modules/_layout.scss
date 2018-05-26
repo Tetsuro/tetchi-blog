@@ -1,5 +1,6 @@
 $logo-height: 130px;
-$wrapper-width: 800px;
+$wrapper-width: 700px;
+$wrapper-width-large: 800px;
 
 /*============================================================================
   Content Area
@@ -20,6 +21,10 @@ $wrapper-width: 800px;
 
   @include phone-and-up {
     padding: 0 $spacing-unit;
+  }
+
+  @include desktop {
+    max-width: $wrapper-width-large;
   }
 
   @extend %clearfix;

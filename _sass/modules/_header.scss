@@ -23,6 +23,10 @@
     flex-direction: row;
     padding: $spacing-unit 0;
   }
+
+  @include desktop {
+    max-width: calc(#{$wrapper-width-large} - #{$spacing-unit-doubled}); // Required to remove padding on side for header.
+  }
 }
 
 .header__logo {

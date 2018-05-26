@@ -23,7 +23,7 @@ body {
   color: $color-slate;
   -webkit-text-size-adjust: 100%;
 
-  @include tablet-and-up {
+  @include desktop {
     font-size: $base-font-size-desktop;
   }
 }
