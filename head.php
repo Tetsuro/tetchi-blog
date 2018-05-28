@@ -11,24 +11,30 @@
     <meta name="twitter:site" content="@t3tchi" />
     <meta name="twitter:creator" content="@t3tchi" />
 
-    <?php if (  (is_home()) || (is_front_page())  ) { ?>
+    <?php if ( (is_home()) || (is_front_page())  ) { ?>
       <meta name="description" content="Tetchi's blog about life and stuff."/>
       <meta property="og:description" content="Tetchi's blog about life and stuff."/>
       <meta property="og:title" content="Tetchi blog" />
-      <meta property="og:image" content="<?php echo bloginfo('template_directory'); ?>/img/tetchi.gif"/>
+      <meta property="og:image" content="<?php echo bloginfo('template_directory'); ?>/img/tetchi-profile.jpg"/>
     <?php } elseif (is_single()) { ?>
       <meta name="description" content="<?php echo strip_tags(get_the_excerpt());?>"/>
       <meta property="og:description" content="<?php echo get_the_excerpt(); ?>"/>
       <meta property="og:title" content="<?php echo get_the_title(); ?>" />
       <meta property="og:url" content="<?php echo get_permalink(); ?>" />
       <meta name="twitter:description" content="<?php echo get_the_excerpt(); ?>">
-      <?php if (has_post_thumbnail()) : ?>
+      <?php if (has_post_thumbnail()) { ?>
         <?php 
           $thumbnailSrc = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium');
           $image = esc_attr($thumbnailSrc[0]);
         ?>
         <meta property="og:image" content="<?php echo $image; ?>"/>
-      <?php endif ?>
+      <?php } else { ?>
+        <meta property="og:image" content="<?php echo bloginfo('template_directory'); ?>/img/tetchi-profile.jpg"/>
+      <?php } ?>
+    <?php } elseif (is_page()) { ?>
+      <meta property="og:image" content="<?php echo bloginfo('template_directory'); ?>/img/tetchi-profile.jpg"/>
+      <meta property="og:title" content="<?php echo get_the_title(); ?>" />
+      <meta property="og:url" content="<?php echo get_permalink(); ?>" />
     <?php } ?>
 
     <!--Favicons-->
