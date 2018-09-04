@@ -22,10 +22,6 @@ body {
   font-weight: 300;
   color: $color-slate;
   -webkit-text-size-adjust: 100%;
-
-  @include desktop {
-    font-size: $base-font-size-desktop;
-  }
 }
 
 /** Set `margin-bottom` to maintain vertical rhythm */
