@@ -46,6 +46,8 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
 
+    <script src="<?php echo bloginfo('template_directory'); ?>/js/app.js" />
+
 
     <!-- GA Stuff -->
     <script type="text/javascript">

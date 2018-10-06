@@ -1,8 +1,15 @@
 <footer class="footer" role="contentinfo" aria-label="footer">
-  <a class="footer__link" target="_blank" href="https://twitter.com/t3tchi">
-    <span>Twitter</span>
-  </a>
-  <a class="footer__link" target="_blank" href="https://github.com/Tetsuro">
-    <span>Github</span>
-  </a>
+  <div class="social-links">
+    <a class="footer__link" target="_blank" href="https://twitter.com/t3tchi">
+      <span>Twitter</span>
+    </a>
+    <a class="footer__link" target="_blank" href="https://github.com/Tetsuro">
+      <span>Github</span>
+    </a>
+  </div>
+  <div class="dark-mode-wrapper">
+    <button data-button-light>Light</button>
+    <button data-button-dark>Dark</button>
+  </div>
 </footer>
+
