@@ -1,20 +1,24 @@
 class SiteThemeSetter {
   constructor() {
+    this.body = document.querySelector('body');
     this.darkThemeButton = document.querySelector('[data-button-dark]');
     this.lightThemeButton = document.querySelector('[data-button-light]');
-
+    this.image = document.querySelector('[data-header-img]');
+    this.imageSrc = `${this.image.dataset.headerImgSrc}/img`;
     this.darkThemeButton.addEventListener('click', this.switchToDarkTheme.bind(this));
     this.lightThemeButton.addEventListener('click', this.switchToLightTheme.bind(this));
   }
 
   switchToDarkTheme() {
-    console.log("go to dark mode");
     document.cookie = "siteTheme=dark";
+    this.body.classList.add('dark-theme');
+    this.image.setAttribute('src', `${this.imageSrc}/tetchi-dark.gif`);
   }
 
   switchToLightTheme() {
-    console.log("go to light mode");
     document.cookie = "siteTheme=light";
+    this.body.classList.remove('dark-theme');
+    this.image.setAttribute('src', `${this.imageSrc}/tetchi.gif`);
   }
 }
 

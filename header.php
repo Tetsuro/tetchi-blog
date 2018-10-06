@@ -3,7 +3,23 @@
   <div class="header__content content__wrapper">
     <h1 class="visually-hidden"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">tetchi's blawg</a></h1>
     <div class="header__logo" aria-hidden="true" tabindex="-1">
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo"><img src="<?php bloginfo('template_directory'); ?>/img/tetchi.gif"/ alt="Tetchi Burger"></a>
+      <?php if(isset($_COOKIE['siteTheme']) && $_COOKIE['siteTheme'] == 'dark'):?>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo">
+          <img src="<?php bloginfo('template_directory'); ?>/img/tetchi-dark.gif"/ 
+            alt="Tetchi Burger" 
+            data-header-img
+            data-header-img-src="<?php bloginfo('template_directory'); ?>"
+          />
+        </a>
+      <?php else : ?>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo">
+          <img src="<?php bloginfo('template_directory'); ?>/img/tetchi.gif"/ 
+            alt="Tetchi Burger" 
+            data-header-img
+            data-header-img-src="<?php bloginfo('template_directory'); ?>"
+          />
+        </a>
+      <?php endif ?> 
     </div>
     <nav class="header__nav">
       <ul class="header__links">
