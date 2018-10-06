@@ -136,3 +136,45 @@ figure > img {
 .clear {
   clear: both;
 }
+
+.post-list {
+  margin: 0;
+}
+
+.post-list-item {
+  list-style: none;
+}
+
+.post-list-item__wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: $spacing-unit;
+  padding-bottom: $spacing-unit;
+  border-bottom: 1px solid #ddd;
+}
+
+.post-list-item__thumbnail {
+  width: 100px;
+  flex: 0 0 auto;
+  margin-right: $spacing-unit-halved;
+
+  @include tablet-and-up {
+    width: 150px;
+    margin-right: $spacing-unit;
+  }
+}
+
+.post__metadata--list {
+  margin-bottom: 0;
+  flex: 1 1 100%;
+  text-align: left;
+
+  .post__title {
+    font-size: 1.6em;
+    text-align: left;
+
+    @include tablet-and-up {
+      font-size: 2em;
+    }
+  }
+}

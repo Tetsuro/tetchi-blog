@@ -3,32 +3,29 @@
 	<?php get_header(); ?>
 	<main class="content__wrapper" role="main" id="main-content" tabindex="0">
 		<?php if(have_posts()) : ?>
-			<?php while(have_posts()) : the_post(); ?>
-				<article id="post-<?php the_ID(); ?>" class="post" role="article">
-					<h2 class="post__title">
-						<a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
-					</h2>
-					<div class="post__metadata">
-						<p>
-							<?php the_time('F j, Y'); ?> under <?php the_category("<span aria-hidden='true'>, </span>") ?>
-						</p>
-					</div>
-					<?php if (has_post_thumbnail()) : ?>
-            <div class="post__thumbnail">
-	            <?php the_post_thumbnail(); ?>
-            </div>
-          <?php endif ?>
-					<?php if (has_excerpt()) : ?>
-            <div class="post__excerpt">
-	            <?php the_excerpt(); ?>
-            </div>
-          <?php endif ?>
-					<?php the_content('',FALSE,''); ?>
-					<div class="post__footer">
-						<a href="<?php the_permalink() ?>#more-<?php the_id() ?>">Read more <span class="visually-hidden">about <?php the_title(); ?></span><span aria-hidden="true">&rarr;</span></a>
-					</div>
-				</article>
-			<?php endwhile; ?>
+			<ul class="post-list">
+				<?php while(have_posts()) : the_post(); ?>
+					<li class="post-list-item">
+						<article id="post-<?php the_ID(); ?>" class="post-list-item__wrapper" role="article">
+							<div class="post-list-item__thumbnail">
+								<?php if (has_post_thumbnail()) : ?>
+									<?php the_post_thumbnail(); ?>	
+								<?php else: ?>
+									<img src="<?php echo bloginfo('template_directory'); ?>/img/tetchi-profile.jpg" />
+								<?php endif ?>
+							</div>
+							<div class="post__metadata post__metadata--list">
+								<h2 class="post__title">
+									<a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+								</h2>
+								<p>
+									<?php the_time('F j, Y'); ?> under <?php the_category("<span aria-hidden='true'>, </span>") ?>
+								</p>
+							</div>
+						</article>
+					</li>
+				<?php endwhile; ?>
+			</ul>
 		<?php else : ?>
 			<article class="post" role="article">
 				<?php _e('Not Found'); ?>
