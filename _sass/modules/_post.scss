@@ -73,7 +73,10 @@
 
 .post__pagination {
   text-align: center;
-  @extend %section-spacing;
+  padding-bottom: $spacing-unit;
+  margin-bottom: $spacing-unit;
+  border-bottom: 1px solid;
+  @include borderColor();
 }
 
 .emoji {

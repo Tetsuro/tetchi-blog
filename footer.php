@@ -8,8 +8,8 @@
     </a>
   </div>
   <div class="dark-mode-wrapper">
-    <button data-button-light>Light</button>
-    <button data-button-dark>Dark</button>
+    <button data-button-light class="light-button">Light ☀️</button>
+    <button data-button-dark class="dark-button">Dark 🌙</button>
   </div>
 </footer>
 

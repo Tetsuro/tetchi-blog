@@ -15,5 +15,30 @@
 }
 
 .social-links {
-  margin-bottom: $spacing-unit-halved;
+  margin-bottom: $spacing-unit;
+}
+
+.dark-mode-wrapper {
+  display: flex;
+  justify-content: center;
+
+  button {
+    font-size: 1em;
+    padding: 10px;
+    background: transparent;
+    @include borderColor();
+  }
+
+  .light-button {
+    background: white; 
+    border-radius: 10px 0 0 10px;
+    border-right: none;
+  }
+
+  .dark-button {
+    border-radius: 0 10px 10px 0;
+    border-left: none;
+    background-color: $bg-dark;
+    color: #fff;
+  }
 }
