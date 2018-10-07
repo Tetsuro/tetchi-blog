@@ -1,5 +1,5 @@
 <?php get_template_part('head'); ?>
-<body class="<?php if(isset($_COOKIE['siteTheme']) && $_COOKIE['siteTheme'] == 'dark') { echo "dark-theme"; } ?>">
+<body class="<?php if(isset($_COOKIE['siteTheme']) && $_COOKIE['siteTheme'] == 'dark') { echo "darkMode"; } ?>">
   <?php get_header(); ?>
   <main class="content__wrapper" role="main" id="main-content" tabindex="0">
     <?php if(have_posts()) : ?>

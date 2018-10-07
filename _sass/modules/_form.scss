@@ -63,14 +63,13 @@
 
   display: inline-block;
   max-width: 100%;
-  background: $color-black;
   color: $color-white;
   padding: $spacing-unit-halved;
   border: none;
   border-radius: $border-radius;
+  @include buttonColor();
 
   &:hover {
-    background: rgba($color-black, 0.5);
     cursor: pointer;
   }
 

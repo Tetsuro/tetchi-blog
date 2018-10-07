@@ -20,8 +20,9 @@ body {
   font-size: $base-font-size;
   line-height: 1em;
   font-weight: 300;
-  color: $color-slate;
   -webkit-text-size-adjust: 100%;
+  @include backgroundColor();
+  @include textSubduedColor();
 }
 
 /** Set `margin-bottom` to maintain vertical rhythm */
@@ -39,7 +40,8 @@ ul, ol, dl, figure,
 }
 
 %section-spacing {
-  border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid;
+  @include borderColor();
   margin-bottom: $spacing-unit;
   padding-bottom: $spacing-unit;
 
@@ -91,12 +93,10 @@ a {
   color: $color-blue-2;
   text-decoration: none;
 
-  &:visited {
-    color: #609;
-  }
-
+  @include linkColor();
+  
   &:hover {
-      text-decoration: underline;
+    text-decoration: underline;
   }
 }
 
@@ -162,8 +162,8 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  background-color: lighten($color-slate, 50%);
   margin-bottom: $spacing-unit;
+  @include hrColor();
 }
 
 table {

@@ -10,14 +10,17 @@ class SiteThemeSetter {
   }
 
   switchToDarkTheme() {
+    // if (document.cookie.split(';').filter((item) => item.includes('siteTheme=')).length) {
+    //   console.log('The cookie "reader" exists');
+    // }
     document.cookie = "siteTheme=dark";
-    this.body.classList.add('dark-theme');
+    this.body.classList.add('darkMode');
     this.image.setAttribute('src', `${this.imageSrc}/tetchi-dark.gif`);
   }
 
   switchToLightTheme() {
     document.cookie = "siteTheme=light";
-    this.body.classList.remove('dark-theme');
+    this.body.classList.remove('darkMode');
     this.image.setAttribute('src', `${this.imageSrc}/tetchi.gif`);
   }
 }

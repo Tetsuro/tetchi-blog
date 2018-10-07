@@ -16,7 +16,8 @@
   align-items: center;
   padding: $spacing-unit-halved 0;
   max-width: calc(#{$wrapper-width} - #{$spacing-unit-doubled}); // Required to remove padding on side for header.
-  border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid;
+  @include borderColor();
   flex-direction: column;
 
   @include tablet-and-up {
@@ -57,10 +58,10 @@
   margin: 0;
 
   a {
-    color: $color-black;
+    @include textColor();
 
     &.active {
-      color: $color-blue;
+      @include headerLinksColor();
     }
 
     &:hover, &:focus {
@@ -82,7 +83,8 @@
 
   @include tablet-and-up {
     margin: 0 0 $spacing-unit-halved $spacing-unit;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid;
+    @include borderColor();
     font-size: $base-font-size;
   }
 }
