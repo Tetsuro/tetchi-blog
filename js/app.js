@@ -7,16 +7,21 @@ class SiteThemeSetter {
     this.imageSrc = `${this.image.dataset.headerImgSrc}/img`;
     this.darkThemeButton.addEventListener('click', this.switchToDarkTheme.bind(this));
     this.lightThemeButton.addEventListener('click', this.switchToLightTheme.bind(this));
+
+    this.expiryDate = new Date();
+    this.expiryDate.setDate(this.expiryDate.getDate() + 720);
+    
+    console.log(this.expiryDate.toUTCString());
   }
 
   switchToDarkTheme() {
-    document.cookie = "siteTheme=dark;path=/";
+    document.cookie = `siteTheme=dark;path=/;expires=${this.expiryDate.toUTCString()}`;
     this.body.classList.add('darkMode');
     this.image.setAttribute('src', `${this.imageSrc}/tetchi-dark.gif`);
   }
 
   switchToLightTheme() {
-    document.cookie = "siteTheme=light;path=/";
+    document.cookie = `siteTheme=light;path=/;expires=${this.expiryDate.toUTCString()}`;
     this.body.classList.remove('darkMode');
     this.image.setAttribute('src', `${this.imageSrc}/tetchi.gif`);
   }
