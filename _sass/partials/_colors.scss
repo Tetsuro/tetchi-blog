@@ -21,11 +21,11 @@ $button-color: #000;
 /* Dark mode colours */
 
 $bg-dark: #1C1F2A;
-$border-color-dark: #454545;
+$border-color-dark: #35373c;
 $link-color-dark: #60caff;
-$link-color-visited-dark: #df36e9;
+$link-color-visited-dark: #c17ec5;
 $text-color-dark: #fff;
-$text-color-subdued-dark: #f0f0f0;
+$text-color-subdued-dark: #fff;
 $button-color-dark: #167ac6;
 
 @mixin backgroundColor() {
@@ -109,5 +109,13 @@ $button-color-dark: #167ac6;
 
   .darkMode & {
     background-color: $border-color-dark;
+  }
+}
+
+@mixin formsBackgroundColor() {
+  background: $bg;
+
+  .darkMode & {
+    background: $bg-dark;
   }
 }

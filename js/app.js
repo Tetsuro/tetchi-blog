@@ -7,8 +7,6 @@ class SiteThemeSetter {
     this.imageSrc = `${this.image.dataset.headerImgSrc}/img`;
     this.darkThemeButton.addEventListener('click', this.switchToDarkTheme.bind(this));
     this.lightThemeButton.addEventListener('click', this.switchToLightTheme.bind(this));
-
-    this.body.addEventListener('keyup', this.toggleModes.bind(this));
   }
 
   switchToDarkTheme() {
@@ -21,14 +19,6 @@ class SiteThemeSetter {
     document.cookie = "siteTheme=light;path=/";
     this.body.classList.remove('darkMode');
     this.image.setAttribute('src', `${this.imageSrc}/tetchi.gif`);
-  }
-
-  toggleModes(evt) {
-    if (evt.key === "d") {
-      this.switchToDarkTheme();
-    } else if (evt.key === "l") {
-      this.switchToLightTheme();
-    }
   }
 }
 

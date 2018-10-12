@@ -9,7 +9,9 @@
 						<article id="post-<?php the_ID(); ?>" class="post-list-item__wrapper" role="article">
 							<div class="post-list-item__thumbnail">
 								<?php if (has_post_thumbnail()) : ?>
-									<?php the_post_thumbnail(); ?>	
+									<a href="<?php the_permalink() ?>">
+										<?php the_post_thumbnail(); ?>
+									</a>
 								<?php else: ?>
 									<img src="<?php echo bloginfo('template_directory'); ?>/img/tetchi-profile.jpg" />
 								<?php endif ?>

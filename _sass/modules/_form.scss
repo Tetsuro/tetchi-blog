@@ -52,10 +52,13 @@
 }
 
 .comment__input-text, .comment__input-textarea {
-  border: 1px solid $border-color;
+  border: 1px solid;
   margin-bottom: $spacing-unit-halved;
   padding: $spacing-unit-halved / 2;
   font-size: 1em;
+  @include formsBackgroundColor();
+  @include textColor();
+  @include borderColor();
 }
 
 .comment__input-button {
