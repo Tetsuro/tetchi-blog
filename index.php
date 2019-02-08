@@ -8,13 +8,13 @@
 					<li class="post-list-item">
 						<article id="post-<?php the_ID(); ?>" class="post-list-item__wrapper" role="article">
 							<div class="post-list-item__thumbnail">
-								<?php if (has_post_thumbnail()) : ?>
-									<a href="<?php the_permalink() ?>">
+								<a href="<?php the_permalink() ?>">
+									<?php if (has_post_thumbnail()) : ?>
 										<?php the_post_thumbnail(); ?>
-									</a>
-								<?php else: ?>
-									<img src="<?php echo bloginfo('template_directory'); ?>/img/tetchi-profile.jpg" />
-								<?php endif ?>
+									<?php else: ?>
+										<img src="<?php echo bloginfo('template_directory'); ?>/img/tetchi-profile.jpg" />
+									<?php endif ?>
+								</a>
 							</div>
 							<div class="post__metadata post__metadata--list">
 								<h2 class="post__title">

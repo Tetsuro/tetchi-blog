@@ -10,8 +10,6 @@ class SiteThemeSetter {
 
     this.expiryDate = new Date();
     this.expiryDate.setDate(this.expiryDate.getDate() + 720);
-    
-    console.log(this.expiryDate.toUTCString());
   }
 
   switchToDarkTheme() {
