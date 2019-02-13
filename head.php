@@ -48,7 +48,7 @@
 
     <script src="<?php echo bloginfo('template_directory'); ?>/js/app.js" />
 
-
+    
     <!-- GA Stuff -->
     <script type="text/javascript">
       var _gaq = _gaq || [];

@@ -23,6 +23,7 @@
   figcaption {
     font-size: $small-font-size;
     text-align: center;
+    padding-top: $spacing-unit / 4;
     margin-bottom: $spacing-unit;
     line-height: 1.4rem;
   }
@@ -92,7 +93,6 @@
 
 figure > img {
   display: inline-block;
-  margin-bottom: $spacing-unit / 4;
 }
 
 .alignwide {
