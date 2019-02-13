@@ -42,6 +42,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo('template_directory'); ?>/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="<?php bloginfo('template_directory'); ?>/favicon-16x16.png">
 
+    <?php wp_head(); ?>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">

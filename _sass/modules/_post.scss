@@ -26,6 +26,8 @@
     padding-top: $spacing-unit / 4;
     margin-bottom: $spacing-unit;
     line-height: 1.4rem;
+    margin-top: 0;
+    @include textColor();
   }
 }
 
