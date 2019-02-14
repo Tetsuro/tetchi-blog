@@ -12,5 +12,3 @@
     <button data-button-dark class="dark-button">Dark 🌙</button>
   </div>
 </footer>
-
-<?php wp_footer(); ?>

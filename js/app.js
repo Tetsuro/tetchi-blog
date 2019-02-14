@@ -27,4 +27,17 @@ class SiteThemeSetter {
 
 document.addEventListener('DOMContentLoaded', () => {
   const siteThemeSetter = new SiteThemeSetter();
+
+  const observer = lozad('.lazy-load', {
+    rootMargin: '300px 0px',
+    threshold: 0.1,
+    load: function(el) {
+      el.src = el.getAttribute('data-src');
+      el.onload = function () {
+        el.classList.add('is-loaded');
+        el.parentElement.classList.add('figure-is-loaded');
+      };
+    },
+  });
+  observer.observe();
 });

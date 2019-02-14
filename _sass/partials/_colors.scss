@@ -119,3 +119,11 @@ $button-color-dark: #167ac6;
     background: $bg-dark;
   }
 }
+
+@mixin placeholderBackgroundColor() {
+  background: rgba(0, 0, 0, 0.10);
+
+  .darkMode & {
+    background: rgba(255, 255, 255, 0.15);
+  }
+}
