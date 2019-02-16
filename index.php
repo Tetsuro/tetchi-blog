@@ -34,7 +34,8 @@
 			</article>
 		<?php endif; ?>
 		<div class="post__pagination">
-			<?php posts_nav_link("<span aria-hidden='true'>/</span>","&laquo; newer "," older &raquo;"); ?>
+			<?php next_posts_link( '&laquo; Previous posts', '' ); ?>
+			<?php previous_posts_link( 'Next posts &raquo;' ); ?>
 		</div>
 		<?php get_footer(); ?>
 	</main>

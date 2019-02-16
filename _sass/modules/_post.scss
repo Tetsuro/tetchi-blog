@@ -73,10 +73,11 @@
 }
 
 .post__pagination {
-  text-align: center;
   padding-bottom: $spacing-unit;
   margin-bottom: $spacing-unit;
   border-bottom: 1px solid;
+  display: flex;
+  justify-content: space-between;
   @include borderColor();
 }
 
