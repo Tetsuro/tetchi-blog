@@ -29,6 +29,10 @@
         <div class="comments" name="comments">
           <?php comments_template(); ?>
         </div>
+        <div class="pagination">
+          <?php previous_post_link('%link','« Previous post '); ?>
+          <?php next_post_link('%link', 'Next post »'); ?>
+        </div>
       <?php endwhile; ?>
     <?php else : ?>
       <article class="post" role="article">

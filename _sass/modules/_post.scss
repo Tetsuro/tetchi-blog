@@ -211,3 +211,16 @@ figure > img {
     }
   }
 }
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: $spacing-unit;
+  padding-bottom: $spacing-unit;
+  border-bottom: 1px solid;
+  @include borderColor();
+
+  @include tablet-and-up {
+    margin-top: $spacing-unit * -1;
+  }
+}
