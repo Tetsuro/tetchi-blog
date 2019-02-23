@@ -35,7 +35,14 @@ document.addEventListener('DOMContentLoaded', () => {
       el.src = el.getAttribute('data-src');
       el.onload = function () {
         el.classList.add('is-loaded');
-        el.parentElement.classList.add('figure-is-loaded');
+
+        while (el.parentNode) {
+          el = el.parentNode;
+          if (el.tagName === "FIGURE") {
+            el.classList.add('figure-is-loaded');
+            return;
+          }
+        }
       };
     },
   });
