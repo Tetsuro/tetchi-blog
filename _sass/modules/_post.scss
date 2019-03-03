@@ -1,6 +1,7 @@
 .post {
   @extend %section-spacing;
 
+
   /** Make dividers inside posts skinnier than section dividers. **/
   hr {
     max-width: 20%;
@@ -224,4 +225,9 @@ figure > img {
   @include tablet-and-up {
     margin-top: $spacing-unit * -1;
   }
+}
+
+
+.wp-block-embed-youtube {
+  background: none !important;
 }

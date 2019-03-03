@@ -32,6 +32,7 @@ p, blockquote, pre,
 ul, ol, dl, figure {
   line-height: $base-line-height;
   margin-bottom: $spacing-unit;
+  word-break: break-word;
 }
 
 %section-spacing {
