@@ -19,4 +19,13 @@
   
   add_filter( 'posts_where', 'wpb_password_post_filter' );
 
+  add_filter( 'rest_allow_anonymous_comments', '__return_true' );
+
+  register_nav_menus(
+			array(
+				'menu-1' => __( 'Primary', 'twentynineteen' ),
+				'footer' => __( 'Footer Menu', 'twentynineteen' ),
+				'social' => __( 'Social Links Menu', 'twentynineteen' ),
+			)
+		);
 ?>
