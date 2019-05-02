@@ -5,11 +5,24 @@
 /**
  * Reset some basic elements
  */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-    margin: 0;
-    padding: 0;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+hr,
+dl,
+dd,
+ol,
+ul,
+figure {
+  margin: 0;
+  padding: 0;
 }
 
 /**
@@ -27,9 +40,19 @@ body {
 
 /** Set `margin-bottom` to maintain vertical rhythm */
 
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+ol,
+dl,
+figure {
   line-height: $base-line-height;
   margin-bottom: $spacing-unit;
   word-break: break-word;
@@ -67,19 +90,26 @@ figcaption {
 }
 
 /** Lists */
-ul, ol {
+ul,
+ol {
   margin-left: $spacing-unit;
 }
 
 li {
-  > ul, > ol {
+  > ul,
+  > ol {
     margin-bottom: 0;
   }
 }
 
 /** Headings */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 300;
   font-family: 'Roboto', sans-serif;
 }
@@ -90,7 +120,7 @@ a {
   text-decoration: none;
 
   @include linkColor();
-  
+
   &:hover {
     text-decoration: underline;
   }
@@ -131,7 +161,8 @@ blockquote {
   }
 }
 
-pre, code {
+pre,
+code {
   font-size: 15px;
   border: 1px solid $border-color;
   border-radius: 3px;
@@ -197,6 +228,15 @@ table {
   }
 }
 
-input, textarea {
+input,
+textarea {
   -webkit-appearance: none;
+}
+
+.wp-block-video {
+  background: none !important;
+}
+
+video {
+  width: 100%;
 }
