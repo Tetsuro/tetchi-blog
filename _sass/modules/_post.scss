@@ -1,7 +1,6 @@
 .post {
   @extend %section-spacing;
 
-
   /** Make dividers inside posts skinnier than section dividers. **/
   hr {
     max-width: 20%;
@@ -16,7 +15,8 @@
     text-decoration: underline;
   }
 
-  a:hover, a:focus {
+  a:hover,
+  a:focus {
     color: $color-blue-3;
     text-decoration: underline;
   }
@@ -96,7 +96,7 @@
 figure {
   width: 100%;
   border-radius: 3px;
-  @include placeholderBackgroundColor();
+  // @include placeholderBackgroundColor();
 }
 
 figure > img {
@@ -128,7 +128,7 @@ figure > img {
 
 .alignright {
   text-align: center;
-  
+
   @include tablet-and-up {
     float: right;
     margin-left: $spacing-unit;
@@ -203,7 +203,6 @@ figure > img {
       width: 100%;
       height: 100%;
     }
-    
   }
 
   &.alignwide {
@@ -226,7 +225,6 @@ figure > img {
     margin-top: $spacing-unit * -1;
   }
 }
-
 
 .wp-block-embed-youtube {
   background: none !important;
