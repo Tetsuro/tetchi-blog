@@ -1,4 +1,4 @@
-<?php 
+<?php
   function mytheme_setup_theme_supported_features() {
     add_theme_support( 'align-wide' );
     add_theme_support('post-thumbnails', array(
@@ -16,10 +16,17 @@
     }
     return $where;
   }
-  
+
   add_filter( 'posts_where', 'wpb_password_post_filter' );
 
   add_filter( 'rest_allow_anonymous_comments', '__return_true' );
+
+  function change_excerpt_length($length) {
+    return 0;
+  }
+
+  add_filter('excerpt_length', 0);
+  add_filter('excerpt_more', null);
 
   register_nav_menus(
 			array(
@@ -27,5 +34,5 @@
 				'footer' => __( 'Footer Menu', 'twentynineteen' ),
 				'social' => __( 'Social Links Menu', 'twentynineteen' ),
 			)
-		);
+    );
 ?>

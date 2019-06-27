@@ -41,5 +41,6 @@
     <?php endif; ?>
     <?php get_footer(); ?>
   </main>
+  <?php wp_footer() ?>
 </body>
 </html>

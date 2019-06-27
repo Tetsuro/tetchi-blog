@@ -213,25 +213,25 @@ blockquote > :last-child {
 
 pre,
 code {
-  font-size: 15px;
+  /* font-size: 15px;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
   background-color: #edf9ff;
-  word-wrap: break-word;
+  word-wrap: break-word; */
 }
 
 code {
-  padding: 1px 5px;
-  vertical-align: top;
+  /* padding: 1px 5px;
+  vertical-align: top; */
 }
 
 pre {
   padding: 8px 12px;
 }
 pre > code {
-  border: 0;
+  /* border: 0;
   padding-right: 0;
-  padding-left: 0;
+  padding-left: 0; */
 }
 
 hr {
